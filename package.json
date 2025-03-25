@@ -1,0 +1,28 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Galaceon/festivalMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Antonio Jesus Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Galaceon/festivalMusica/issues"
+  },
+  "homepage": "https://github.com/Galaceon/festivalMusica#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.86.0"
+  }
+}
