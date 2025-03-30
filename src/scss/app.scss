@@ -1,7 +1,19 @@
+$fuente_principal : "Montserrat", sans-serif;
+
 body {
-    background-color: blue;
+    font-family: $fuente_principal;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+h1{
+    font-family: $fuente_principal;
+}
+
+p{
+    font-family: $fuente_principal;
+}
+
+a {
+    font-family: $fuente_principal;
 }
