@@ -16,6 +16,7 @@
 
     h1 {
         color: v.$blanco;
+        text-align: center;
         @include m.tablet {
             margin: 0;
         }
