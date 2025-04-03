@@ -1,0 +1,6 @@
+@use 'base/mixins.scss' as m;
+@use 'base/variables.scss'as v;
+
+.lineup {
+    background-color: v.$rosa;
+}
