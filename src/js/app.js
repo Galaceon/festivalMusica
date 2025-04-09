@@ -11,6 +11,28 @@ function crearGaleria() {
         imagen.src = `src/gallery/full/${i}.jpg`;
         imagen.alt = 'Imagen Galería';
 
+        imagen.onclick = function() {
+            mostrarImagen(i)
+        }
+
+
         galeria.appendChild(imagen);
     }
+}
+
+function mostrarImagen(i) {
+    const modal = document.createElement('DIV');
+    modal.classList.add('modal');
+    modal.onclick = cerrarModal;
+
+
+    //Agregar al HTML
+    const body = document.querySelector('body');
+    body.appendChild(modal);
+}
+
+function cerrarModal() {
+    const modal =document.querySelector('.modal');
+
+    modal?.remove();
 }
