@@ -4,6 +4,13 @@ import gulpSass from 'gulp-sass';
 
 const sass = gulpSass(dartSass);
 
+export function html(done) {
+    src('index.html')
+      .pipe(dest('build'));
+  
+    done();
+  }
+
 export function css(done) {
   src('src/scss/app.scss', { sourcemaps: true })
     .pipe(sass().on('error', sass.logError))
@@ -24,6 +31,6 @@ export function dev() {
   watch('src/js/**/*.js', js);
 }
 
-export const build = series(js, css); //build para github y netlify
+export const build = series(js, css, html); //build para github y netlify
 
 export default series(js, css, dev);
